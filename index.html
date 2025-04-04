@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="/assets/images/yonseifavicon1.png">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>연세대학교</title>
+  <script src="admin/js/jquery-3.7.1.min.js"></script>
+  <!-- <script src="admin/js/jquery-ui.min.js"></script> -->
+  <script src="assets/js/commonJs.js"></script>
+  <link rel="stylesheet" href="assets/css/common.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="skip">
+    </div>
+    <!-- Header -->
+    <header class="header header--white">
+
+    <div class="background_shadow">
+      <img src="../연세대학교/assets/images/9.png" alt="">
+
+    </div>
+		
+
+<div class="header__inner">
+  <strong class="header__logo">
+    <span>YEONSEI</span></strong>
+  <div class="header__gnb">
+    <div class="header__lang">
+      <div class="lang slideDown" data-options='{"animation": true,"animationSpeed":0.4}'>
+        <div class="slideDown-title">
+          <button type="button" class="lang__btn slideDown-btn" aria-expanded="false"><span>KOR</span><span class="hidden" data-text='{"text":"open|close", "show":1}'>open</span></button>
+        </div>
+        <div class="lang__content slideDown-cont" aria-hidden="true">
+          <ul class="lang__list">
+            <li class="lang__item"><a href="main.do.html" class="lang__link" title="국문 사이트 이동">KOR</a></li>
+            <li class="lang__item"><a href="en/main.do.html" class="lang__link" title="영문 사이트 이동">ENG</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__menu">
+      <button type="button" class="header__menu-btn" aria-haspopup="true" data-popup-id="layer-sitemap"><span>사이트맵 열기</span></button>
+    </div>
+  </div>
+</div>
+<nav class="header__sitemap" id="layer-sitemap" role="dialog" aria-modal="true" aria-hidden="true">
+  <ul class="sitemap accordion" role="menubar" data-options='{"id": "sitemap","openType": "single","animation": true,"animationSpeed":0.4}'>
+    <li class="sitemap__depth1 accordion-item" role="presentation">
+      <div class="sitemap__title accordion-header">
+        <strong>연세소개</strong>
+        <button type="button" class="sitemap__btn accordion-btn" aria-expanded="false"><span data-text='{"text":"열기|닫기", "show":1}'>열기</span></button>
+      </div>
+      <div class="sitemap__panel accordion-panel">
+        <ul role="menu">
+        	<!-- 해당 메뉴 활성화시 .is-active 클래스 추가 -->
+          <li class="sitemap__depth2 " role="presentation"><a href="company/about.do.html" class="sitemap__link" role="menuitem">연세대학교 소개</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="company/greeting.do.html" class="sitemap__link" role="menuitem">총장 인사말</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="company/history.do.html" class="sitemap__link" role="menuitem">연혁</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="company/ci.do.html" class="sitemap__link" role="menuitem">학교 상징</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="company/mi.do.html" class="sitemap__link" role="menuitem">비전 및 목표</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="company/info/list.do.html" class="sitemap__link" role="menuitem">대학 소식</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="sitemap__depth1 accordion-item" role="presentation">
+      <div class="sitemap__title accordion-header">
+        <strong>입학안내</strong>
+        <button type="button" class="sitemap__btn accordion-btn" aria-expanded="false"><span data-text='{"text":"열기|닫기", "show":1}'>열기</span></button>
+      </div>
+      <div class="sitemap__panel accordion-panel">
+        <ul role="menu">
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">학부 입학</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">대학원 입학</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">편입학</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">외국인 전형</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">입학 상담</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="sitemap__depth1 accordion-item" role="presentation">
+      <div class="sitemap__title accordion-header">
+        <strong>학사정보</strong>
+        <button type="button" class="sitemap__btn accordion-btn" aria-expanded="false"><span data-text='{"text":"열기|닫기", "show":1}'>열기</span></button>
+      </div>
+      <div class="sitemap__panel accordion-panel">
+        <ul role="menu">
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">학사 일정</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">교과과정</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">학칙 및 규정</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">수강신청 안내</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="sitemap__depth1 accordion-item" role="presentation">
+      <div class="sitemap__title accordion-header">
+        <strong>캠퍼스 생활</strong>
+        <button type="button" class="sitemap__btn accordion-btn" aria-expanded="false"><span data-text='{"text":"열기|닫기", "show":1}'>열기</span></button>
+      </div>
+      <div class="sitemap__panel accordion-panel">
+        <ul role="menu">
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">기숙사 안내</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">동아리 및 학생 활동</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">동아리 및 학생 활동</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="sitemap__depth1 accordion-item" role="presentation">
+      <div class="sitemap__title accordion-header">
+        <strong>연구/산학협력</strong>
+        <button type="button" class="sitemap__btn accordion-btn" aria-expanded="false"><span data-text='{"text":"열기|닫기", "show":1}'>열기</span></button>
+      </div>
+      <div class="sitemap__panel accordion-panel">
+        <ul role="menu">
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">연구소 및 센터</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">산학협력 프로그램</a></li>
+          <li class="sitemap__depth2 " role="presentation"><a href="#" class="sitemap__link" role="menuitem">연구 성과</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="sitemap__depth1 accordion-item" role="presentation">
+      <div class="sitemap__title accordion-header">
+        <strong>채용정보</strong>
+        <button type="button" class="sitemap__btn accordion-btn" aria-expanded="false"><span data-text='{"text":"열기|닫기", "show":1}'>열기</span></button>
+      </div>
+      <div class="sitemap__panel accordion-panel">
+        <ul role="menu">
+          <li class="sitemap__depth2" role="presentation"><a href="#" class="sitemap__link" role="menuitem">교수 채용</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <button type="button" class="sitemap__close popup-close"><span>사이트맵 닫기</span></button>
+</nav>
+    </header>
+    <!-- //Header -->
+    <!-- Container -->
+    <div class="container " id="container">
+      
+
+
+      <!-- Keyvisual -->
+      <div class="main-keyvisual">
+        <div class="swiper" data-options='{"loop":true, "autoplay": "5000", "pagination": "bullet", "observer" : false}'> <!-- 08.20 수정 -->
+          <!-- <div class="swiper" > -->
+          <div class="swiper__nav">
+            <button type="button" class="swiper__btn swiper-button-prev"><span>previous</span></button>
+            <div class="swiper-pagination"></div>
+            <button type="button" class="swiper__btn swiper-button-next"><span>next</span></button>
+          </div>
+          <div class="swiper-container">
+            <!-- 07.09 수정 -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <figure class="main-keyvisual__image">
+                  <img src="assets/images/yonsei1.jpeg" class="pc--only" alt="">
+                  <!-- <img src="assets/images/yonsei2.jpeg" class="mobile--only" alt=""> -->
+                </figure>
+                <div class="main-keyvisual__text">
+                  <h1 class="title">YONSEI<span></span><br>GLOBAL IMPACT</h1>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure class="main-keyvisual__image">
+                  <img src="assets/images/yonsei2.jpeg" class="pc--only" alt="">
+                  <!-- <img src="assets/images/kr/img_main_keyvisual02_mo.jpg" class="mobile--only" alt=""> -->
+                </figure>
+                <div class="main-keyvisual__text">
+                  <h1 class="title">THINK YONSEI<span></span><br>THINK FUTURE</h1>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure class="main-keyvisual__image">
+                  <img src="assets/images/yonsei3.jpeg" class="pc--only" alt="">
+                  <!-- <img src="assets/images/kr/img_main_keyvisual03_mo.jpg" class="mobile--only" alt=""> -->
+                </figure>
+                <div class="main-keyvisual__text">
+                  <h1 class="title">YONSEI<span></span><br>EXCELLENCE IN INNOVATION</h1>
+                </div>
+              </div>
+            </div>
+            <!-- //07.09 수정 -->
+          </div>
+          <div class="swiper-indicator">
+            <button type="button" class="swiper-indicator__item">
+              <span class="number">01</span>
+              <div class="bar"><span style="width:0%;"></span></div>
+            </button>
+            <button type="button" class="swiper-indicator__item">
+              <span class="number">02</span>
+              <div class="bar"><span style="width:0%;"></span></div>
+            </button>
+            <button type="button" class="swiper-indicator__item">
+              <span class="number">03</span>
+              <div class="bar"><span style="width:0%;"></span></div>
+            </button>
+          </div>
+        </div>
+        <div class="scroll-icon"><i></i></div>
+      </div>
+      <!-- //main-keyvisual -->
+      <div class="main-content">
+        <div class="main-content__section01">
+          <div class="main-content__text">
+            <div class="text-inner">
+              <span class="sector">Lights the Future</span>
+              <div class="page-number">01 / 04</div>
+              <h2 class="title-t2">미래를 밝히는 지성, 
+                <br>연세대학교</h2>
+              <p class="desc">130년 전통의 명문, 세계를 선도하는 혁신의 요람! 연세대학교에서 당신의 꿈을 실현하세요.</p>
+              <div class="btn-inner">
+                <a href="#" role="button" class="btn btn--border btn--icon arrow"><span>바로가기</span></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="main-content__viusal">
+            <figure class="big-image">
+              <img src="assets/images/16.jpg" alt="">
+              <span class="mask top"></span>
+              <span class="mask left"></span>
+              <span class="mask right"></span>
+              <span class="mask bottom"></span>
+            </figure>
+            <div class="small-image show">
+              <figure class="small-image__object01">
+                <img src="assets/images/1.jpg" alt="">
+              </figure>
+              <figure class="small-image__object02">
+                <img src="assets/images/2.jpg" alt="">
+              </figure>
+              <figure class="small-image__object03">
+                <img src="assets/images/3.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- //main-content__section01 -->
+        <div class="main-content__section02">
+          <div class="main-content__viusal">
+            <figure class="big-image">
+              <img src="assets/images/4.jpg" alt="">
+              <span class="mask top"></span>
+              <span class="mask left"></span>
+              <span class="mask right"></span>
+              <span class="mask bottom"></span>
+            </figure>
+            <!-- 08.20 수정 -->
+            <div class="small-image">
+              <figure class="small-image__object01">
+                <img src="assets/images/5.jpg" alt="">
+                
+              </figure>
+              <figure class="small-image__object02">
+                <img src="assets/images/6.png" alt="">
+                
+              </figure>
+              <figure class="small-image__object03">
+                <img src="assets/images/7.png" alt="">                
+              </figure>
+            </div>
+          </div>
+          <div class="main-content__text">
+            <div class="text-inner text-right">
+              <span class="sector">Illuminating Your Future</span>
+              <div class="page-number">02 / 04</div>
+              <h2 class="title-t2">연세의 빛,<br> 당신의 미래를 밝히다</h2>
+              <p class="desc">월한 교육, 최첨단 연구, 그리고 무한한 네트워크! 연세에서 미래를 설계하세요.</p>
+              <div class="btn-inner">
+                <a href="solution/hp.do.html" role="button" class="btn btn--border btn--icon arrow"><span>바로가기</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //main-content__section02 -->
+        <div class="main-content__section03">
+          <div class="main-content__text">
+            <div class="text-inner">
+              <span class="sector">A Globally Recognized University</span>
+              <div class="page-number">03 / 04</div>
+              <h2 class="title-t2">세계가 인정한<br> 글로벌 대학</h2>
+              <p class="desc">QS 세계 대학 순위 상위권! 글로벌 경쟁력을 갖춘 대학으로 자리 잡았어요.</p>
+              <div class="btn-inner">
+                <a href="solution/ep.do.html" role="button" class="btn btn--border btn--icon arrow"><span>바로가기</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="main-content__viusal">
+            <figure class="big-image">
+              <img src="assets/images/8.png" alt="">
+              <span class="mask top"></span>
+              <span class="mask left"></span>
+              <span class="mask right"></span>
+              <span class="mask bottom"></span>
+            </figure>
+            <!-- 08.20 수정 -->
+            <div class="small-image">
+              <figure class="small-image__object01">
+                <img src="assets/images/10.jpg" alt="">
+              </figure>
+              <figure class="small-image__object02">
+                <img src="assets/images/11.jpg" alt="">
+
+              </figure>
+              <figure class="small-image__object03">
+                <img src="assets/images/12.jpg" alt="">
+              </figure>
+            </div>
+            <!-- //08.20 수정 -->
+          </div>
+        </div>
+        <!-- //main-content__section03 -->
+        <div class="main-content__section04">
+          <div class="main-content__viusal">
+            <figure class="big-image">
+              <img src="assets/images/13.jpg" alt="">
+              <span class="mask top"></span>
+              <span class="mask left"></span>
+              <span class="mask right"></span>
+              <span class="mask bottom"></span>
+            </figure>
+            <div class="small-image">
+              <figure class="small-image__object01">
+                <img src="assets/images/14.png" alt="">
+
+              </figure>
+              <figure class="small-image__object02">
+                <img src="assets/images/15.png" alt="">
+
+              </figure>
+              <figure class="small-image__object03">
+                <img src="assets/images/6.png" alt="">
+            </div>
+          </div>
+          <div class="main-content__text">
+            <div class="text-inner text-right">
+              <span class="sector">Strong Career Support</span>
+              <div class="page-number">04 / 04</div>
+              <h2 class="title-t2"> 탄탄한 취업 지원과<br>연세의 아름다운 환경</h2>
+              <p class="desc">글로벌 시장에서 혁신적인 기술력 확보를 위한<br> 실효성 있는 투자를 통해 글로벌 경쟁력을 갖추고<br> 지속적인 성장과 혁신을 추구합니다.</p>
+              <div class="btn-inner">
+                <a href="solution/rnd.do.html" role="button" class="btn btn--border btn--icon arrow"><span>바로가기</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //main-content__section04 -->
+        <div class="main-content__indicator">
+          <button type="button" class="btn-indicator active"><span class="hidden">Lights the Future
+          </span></button>
+          <button type="button" class="btn-indicator"><span class="hidden">Illuminating Your Future
+          </span></button>
+          <button type="button" class="btn-indicator"><span class="hidden">A Globally Recognized University
+          </span></button>
+          <button type="button" class="btn-indicator"><span class="hidden">Strong Career Support
+          </span></button>
+        </div>
+        <!-- //main-content__indicator -->
+      </div>
+      <!-- //main-content -->
+      <!-- Content -->
+      <section class="content">
+      </section>
+      <!-- //Content -->
+<script>
+$(document).ready(function(){
+	
+});
+
+
+</script>
+    </div>
+    
+    <!-- //Container -->
+    <!-- Footer -->
+    <footer class="footer">
+    	
+<div class="footer__inner">
+  <div class="footer__top">
+    <strong class="footer__logo"><a href="#"><span>YONSEI/span></a></strong>
+    <nav class="footer__sitemap">
+      <ul class="sitemap">
+        <li class="sitemap__depth1">
+          <strong class="sitemap__title">대학소개</strong>
+          <ul>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">연세대학교 소개</a></li>
+            <!-- 2024-09-13 수정 -->
+            <!-- class="sitemap__depth2"><a href="/company/greeting.do" class="sitemap__link">창립자 인사말</a></li>-->
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">총장 인사말</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">연혁</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">학교 상징</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">비전 및 목표</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">대학 소식</a></li>
+          </ul>
+        </li>
+        <li class="sitemap__depth1">
+          <strong class="sitemap__title">국제 네트워크</strong>
+          <ul>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">글로벌 캠퍼스</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">해외 교류 프로그램</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">교환학생 제도</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">해외 연구 협력</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">연구 성과 및 발표</a></li>
+          </ul>
+        </li>
+        <li class="sitemap__depth1">
+          <strong class="sitemap__title">학문과 연구</strong>
+          <ul>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">학부 및 대학원</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">연구소 및 센터</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">산학협력 프로그램</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">R&amp;D</a></li>
+          </ul>
+        </li>
+        <li class="sitemap__depth1">
+          <strong class="sitemap__title">입학 및 등록</strong>
+          <ul>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">학부 입학</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">대학원 입학</a></li>
+          </ul>
+        </li>
+        <li class="sitemap__depth1">
+          <strong class="sitemap__title">캠퍼스 생활</strong>
+          <ul>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">기숙사 안내</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">동아리 및 학생 활동</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">도서관 및 학습 시설</a></li>
+            <li class="sitemap__depth2"><a href=#" class="sitemap__link">복지 및 의료 서비스</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link">연세 경영 체계</a></li>
+          </ul>
+        </li>
+        <li class="sitemap__depth1">
+          <strong class="sitemap__title">인재채용</strong>
+          <ul>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link" target="_blank" title="새창 열림">교수 채용</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link" target="_blank" title="새창 열림">직원 채용</a></li>
+            <li class="sitemap__depth2"><a href="#" class="sitemap__link" target="_blank" title="새창 열림">연구직 채용</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer__info">
+    <div class="footer__policy">
+      <a href="pipp.do.html" class="policy"><span class="policy__text policy__text--emphasis">개인정보 처리방침</span></a>
+      <button type="button" class="policy" onclick="mvJs.popup.open('#layer-email-refusal');"><span class="policy__text">이메일무단수집금지</span></button>
+      <a href="contactus.do.html" class="policy"><span class="policy__text">Contact us</span></a>
+      <a href="https://ngw.sjku.co.kr/GW/CS010/CS0101010.aspx" class="policy" target="_blank" title="새창 열림"><span class="policy__text">방문신청</span></a>
+      <!--  2025-03-27 수정 -->
+      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=mPCbjPhgaUODBP3_QBAJeHytalcOGVhFn4tb0GbVd9BUMThFVjlQUEhEMjlQOTNCNzc1NzFKSVVPWi4u&origin=Invitation&channel=1" class="policy" target="_blank" title="새창 열림"><span class="policy__text">사이버제보</span></a>
+    </div>
+    <p class="footer__copyright">Copyright © YONSEI UNIVERSITY CO., LTD. All rights reserved.</p>
+    <div class="familysite slideDown" data-options='{"animation": true,"direction":"up","animationSpeed":0.4}'>
+      <div class="slideDown-title">
+        <button type="button" class="familysite__btn slideDown-btn" aria-expanded="false"><span>Family site</span><span class="hidden" data-text='{"text":"열기|닫기", "show":1}'>open</span></button>
+      </div>
+      <div class="familysite__content slideDown-cont" aria-hidden="true">
+        <ul class="familysite__list">
+          <li class="familysite__item"><a href="https://www.yonsei.ac.kr" class="familysite__link" target="_blank" title="새창 열림">연세대학교 공식 홈페이지</a></li>
+          <li class="familysite__item"><a href="#" class="familysite__link" target="_blank" title="새창 열림">연세대학교 대학원</a></li>
+          <li class="familysite__item"><a href="#" class="familysite__link" target="_blank" title="새창 열림">연세대학교 의료원</a></li>
+          <li class="familysite__item"><a href="#" class="familysite__link" target="_blank" title="새창 열림">연세대학교 글로벌 캠퍼스</a></li>
+          <li class="familysite__item"><a href="#" class="familysite__link" target="_blank" title="새창 열림">연세대학교 동문회</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="floating slideDown" data-options='{"animation": false}'>
+  <div class="floating__content slideDown-cont">
+    <div class="floating__inner">
+    	<button type="button" class="floating__menu floating__menu--recruit" onclick="locationMove"><span>설정</span></button>
+      <button type="button" class="floating__menu floating__menu--visit" onclick="locationMove"><span>졸업생</span></button>
+      <!--  2025-03-27 수정 -->
+      <button type="button" class="floating__menu floating__menu--report" onclick="locationMove"><span>채용</span></button>
+    </div>
+    <div class="floating scroll"> <!-- scroll 클래스 추가 -->
+  <button class="floating__btn">+</button>
+</div>
+  </div>
+  <div class="slideDown-title">
+    <button type="button" class="floating__btn slideDown-btn" aria-expanded="false"><span data-text='{"text":"floating menu open|floating menu close", "show":1}'>floating menu open</span></button>
+  </div>
+  <button type="button" class="floating__top btn-top"><span class="hidden">페이지 상단으로 이동</span></button>
+</div>
+    </footer>
+    <!-- Footer -->
+K
+<div class="layer-popup" id="layer-privacy" role="dialog" aria-modal="true" aria-hidden="true" tabindex="0">
+  <div class="layer-popup__inner">
+    <dl class="layer-noti privacy-exposure">
+      <dt>개인정보 노출 주의 안내</dt>
+      <dd>
+        <p class="desc">문의내용 작성 시 주민등록번호, 연락처 등 개인정보가<br> 포함되지 않았는지 확인하셨습니까?</p>
+        <div class="btn-inner">
+          <button type="button" class="btn btn--contained" name="popBtn" data-btn="true"><span>확인</span></button>
+          <button type="button" class="btn btn--border" name="popBtn" data-btn="false"><span>취소</span></button>
+        </div>
+      </dd>
+    </dl>
+    <button type="button" class="btn-close popup-close"><span class="hidden">close</span></button>
+  </div>
+</div>
+
+<div class="layer-popup" id="layer-email-refusal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="0">
+    <div class="layer-popup__inner">
+      <dl class="layer-noti email-refusal">
+        <dt>이메일 무단 수집 거부 안내</dt>
+        <dd>
+          <p class="desc">본 웹사이트에 게시된 이메일주소가 전자우편 수집 프로그램이나<br> 그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며,<br> 이를 위반 시 정보통신망법에 의해 형사처벌됨을 유념하시기 바랍니다.</p>
+          <div class="btn-inner">
+            <button type="button" class="btn btn--contained" onclick="mvJs.popup.close('#layer-email-refusal');"><span>확인</span></button>
+          </div>
+        </dd>
+      </dl>
+      <button type="button" class="btn-close popup-close"><span class="hidden">close</span></button>
+    </div>
+  </div>
+
+
+  <div class="layer-popup main-popup" id="layer-main-popup" role="dialog" aria-modal="true" aria-hidden="true" tabindex="0">
+    <div class="layer-popup__inner">
+      <div class="popup-content">
+        <figure>
+        	<img src="" class="pc--only" alt=""> <!-- pc 이미지 영역 -->
+          	<img src="" class="mobile--only" alt=""> <!-- mobile 이미지 영역 -->
+        </figure>
+      </div>
+      <button type="button" class="btn-close popup-close"><span class="hidden">close</span></button>
+    </div>
+  </div>
+
+  </div>
+</body>
+<script>
+
+
+function layerPopConfirm(selector, callback) {
+	mvJs.popup.open('#'+selector);	
+	$('#'+selector+' button[name=popBtn]').unbind('click');
+	$('#'+selector+' button[name=popBtn]').on('click', function(rtn){
+		mvJs.popup.close('#'+selector);
+		if($(this).attr('data-btn') == 'true'){
+			callback();
+		}
+	});
+}
+ 
+function locationMove(url) {
+	window.open('about:blank').location.href=url;
+}
+
+$("[data-korean='true']").on("keyup",function(e){
+	 var re =/[^a-zA-Zㄱ-ㅎ가-힣|\u318D\u119E\u11A2\u2022\u2025\u00B7\uFE55\u4E10\u3163\u3161]/g;
+    var temp=$(this).val();
+    if(re.test(temp)){
+		$(this).val(temp.replace(re,""));
+    }
+});
+</script>
+</html>
