@@ -28,7 +28,8 @@
   width: 1px;
   height: 1px;
   margin: -1px !important;
-  clip: rect(0 0 0 0);
+  clip: rect(0px, 0px, 0px, 0px); 
+  clip-path: inset(50%);
 }
 
 
@@ -54,56 +55,20 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-} */
-
- @keyframes kv_image_show {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(0.4);
-  }
-} 
-@keyframes kv_image_full {
-  0% {
-    transform: scale(0.4);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes kv_text_show {
-  0% {
-    opacity: 0;
-    margin-top: 12rem;
-  }
-  100% {
-    margin-top: 0;
-    opacity: 1;
-  }
-}
-@keyframes kv_text_full {
-  0% {
-    color: #17171B;
-  }
-  100% {
-    color: #fff;
-  }
-}
-.error dl:before, .layer-popup.main-popup .btn-close:after, .policy__content ul > li:before, .policy__inner .accordion-btn:after, .management-system__box dt:before, .management-system__item .item04:before, .management-system__item span:after, .strategies-guide__inner:before, .strategies-guide:before, .roadmap-wrap .roadmap-graph__bar .tooltip:after, .roadmap-wrap .scope3:before, .mission__item:before, .solution__detail:before, .solution__part:before, .tooltip-btn:hover:before, .tooltip-btn:hover:after, .is-active .tooltip-btn:before, .is-active .tooltip-btn:after, .management-philosophy__goals .diagram-inner .item-inner .item strong:before, .management-philosophy__vision .item-wrap .business-goals .item:before, .main-keyvisual__image:before, .sub-keyvisual__image:after, .footer .familysite__btn:after, .footer__policy .policy:not(:last-child):after, .footer__sitemap .sitemap__link[target=_blank]:after, .footer__sitemap:before, .floating__menu:hover:after, .floating__menu:visited:after, .floating__menu:active:after, .floating__menu:before, .floating__btn:before, .floating__btn:after, .lang__btn:after, .header__sitemap .sitemap__link[target=_blank]:after, .input-wrap [type=checkbox] + label:before, .select-button:after, .nodata:before, .board--type3 .board__date:before, .board--detail .board__date:before, .chart__bar:before, .chart__inner:after, .btn--icon:after {
-  content: "";
-  display: inline-block;
 }
 
-.policy__inner .accordion-btn span, .solution__close span, .tooltip-close span, .tooltip-btn span, .management-philosophy__vision .item-wrap .business-goals dl dt, .footer__logo span, .floating__btn span, .header__logo span, .header__sitemap .sitemap__close span, .header__sitemap .sitemap__btn span, .header__menu-btn span, .input-wrap [type=checkbox], .swiper__btn span, .pagination__arrow span, .btn--icon:not(.btn--border, .btn--contained) span, .hidden, caption {
+
+
+.screen-reader-only {
   overflow: hidden;
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px !important;
   clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
 .tooltip-btn:hover:before, .tooltip-btn:hover:after, .is-active .tooltip-btn:before, .is-active .tooltip-btn:after, .floating__btn:before, .floating__btn:after {
@@ -1481,7 +1446,8 @@ body[style*="overflow: hidden"] .header {
     width: 1px;
     height: 1px;
     margin: -1px !important;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0); /* 쉼표 추가하면 오류 줄어듦 */
+    clip-path: inset(50%);  /* 최신 방식 */
   }
 }
 @media only screen and (min-width: 1480px) {
